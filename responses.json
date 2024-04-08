@@ -1,0 +1,86 @@
+[
+  {
+    "id": 1712429727701,
+    "timestamp": "2024-04-06T18:55:27.701Z",
+    "answers": {
+      "jmeno": "Tomáš Holeš",
+      "strach": "Ty",
+      "intenzita": "7",
+      "tyden": "3",
+      "naposled": "2024-04-01",
+      "horor": "Ne"
+    }
+  },
+  {
+    "id": 1712493536853,
+    "timestamp": "2024-04-07T12:38:56.853Z",
+    "answers": {
+      "jmeno": "Adolf Li",
+      "strach": "Pavouci",
+      "intenzita": "7",
+      "tyden": "5",
+      "naposled": "2024-04-08",
+      "horor": "Ano"
+    }
+  },
+  {
+    "id": 1712508440312,
+    "timestamp": "2024-04-07T16:47:20.312Z",
+    "answers": {
+      "jmeno": "Muhamed",
+      "strach": "Rak",
+      "intenzita": "9",
+      "tyden": "7",
+      "naposled": "2024-04-01",
+      "horor": "Ano"
+    }
+  },
+  {
+    "id": 1712509775784,
+    "timestamp": "2024-04-07T17:09:35.784Z",
+    "answers": {
+      "jmeno": "Muhamed",
+      "strach": "Rak",
+      "intenzita": "9",
+      "tyden": "7",
+      "naposled": "2024-04-01",
+      "horor": "Ano"
+    }
+  },
+  {
+    "id": 1712517035232,
+    "timestamp": "2024-04-07T19:10:35.232Z",
+    "answers": {
+      "jmeno": "Jonáš ",
+      "strach": "Výšky",
+      "intenzita": "2",
+      "tyden": "4",
+      "naposled": "2024-02-14",
+      "horor": "Nevim"
+    }
+  },
+  {
+    "id": 1712517104774,
+    "timestamp": "2024-04-07T19:11:44.774Z",
+    "answers": {
+      "jmeno": "Jarda",
+      "strach": "Pavouci",
+      "intenzita": "10",
+      "tyden": "15",
+      "naposled": "2024-04-07",
+      "horor": "Ne"
+    }
+  },
+  {
+    "id": 1712585644169,
+    "timestamp": "2024-04-08T14:14:04.169Z",
+    "answers": {
+      "jmeno": "Jirka Novák",
+      "strach": "Oceán",
+      "intenzita": "3",
+      "tyden": "10",
+      "naposled": "2024-04-04",
+      "horor": "Ano"
+    }
+  }
+]

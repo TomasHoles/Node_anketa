@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    
+    <title>Výsledky ankety</title>
+</head>
+<body>
+    <h1>Výsledky ankety</h1>
+    <br>
+    <div class="container">
+    <table border="1">
+        <tr>
+            <th>ID</th>
+            <th>Datum</th>
+            <th>Čas</th>
+            <th>Jméno a příjmení</th>
+            <th>Strach</th>
+            <th>Intenzita strachu</th>
+            <th>Kolikrát týdně</th>
+            <th>Kdy naposledy</th>
+            <th>Má rád horory</th>
+        </tr>
+        <% responses.forEach(function(response) { 
+            const date = new Date(response.timestamp);
+            const dateString = `${('0' + date.getDate()).slice(-2)}.${('0' + (date.getMonth() + 1)).slice(-2)}.${date.getFullYear()}`;
+            const timeString = `${('0' + date.getHours()).slice(-2)}:${('0' + date.getMinutes()).slice(-2)}:${('0' + date.getSeconds()).slice(-2)}`;
+           
+            %>
+            <tr>
+                <td><%= response.id %></td>
+                <td><%= dateString %></td>
+                <td><%= timeString %></td>
+                <td><%= response.answers.jmeno %></td>
+                <td><%= response.answers.strach %></td>
+                <td><%= response.answers.intenzita %></td>
+                <td><%= response.answers.tyden %> krát</td>
+                <td><%= response.answers.naposled %></td>
+                <td><%= response.answers.horor %></td>
+            </tr>
+        <% }); %>
+    </table> 
+</div>   
+<br>
+
+</body>
+</html>

@@ -1,0 +1,154 @@
+body{
+    Font-family: Century Gothic, CenturyGothic, AppleGothic, sans-serif;
+    background-color: #dddddd;
+    margin: 0;
+    padding: 0;
+}
+
+
+h1{
+    color: white;
+    background-color: #575075;
+    text-align: center;
+    font-size: 40pt;
+    padding: 10px;
+    margin: 0;
+}    
+
+.form-container {
+    background-color: #d8daff;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    margin: 40px auto;
+}
+
+label {
+    font-weight: bold;
+    
+    margin-bottom: 5px;
+}
+
+input[type=text],
+input[type=number],
+select,
+input[type=range] {
+    width: 80%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: 1px solid #9992f7;
+    box-sizing: border-box;
+}
+
+input[type=date]{
+   
+    border: 1px solid #9992f7;
+}
+
+input[type=range] {
+    -webkit-appearance: none;
+    width: 80%;
+    height: 8px;
+    border-radius: 5px;
+    background: #ffffff;
+    outline: none;
+    opacity: 0.7;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+}
+
+input[type=range]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: #575075;
+    cursor: pointer;
+}
+
+input[type=range]::-moz-range-thumb {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: #4CAF50;
+    cursor: pointer;
+}
+
+input[type=submit] {
+    font-size: 16px;
+    background-color: #575075;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+input[type=submit]:hover {
+    background-color: #575075;
+}
+
+#intenzitaValue {
+    margin-left: 20px;
+    font-weight: bold;
+    background-color: #483c50;
+    color: #fff;
+    padding: 5px;
+    border-radius: 20px;
+}
+
+
+
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    box-shadow: 0 2px 3px rgba(0, 0, 0, 0.1);
+}
+
+th,
+td {
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background-color: #3b3847;
+    color: white;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+tr:hover {
+    background-color: #ddd;
+}
+
+.container {
+    max-width: 1260px;
+    margin: auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+
+
+
+footer{
+    Font-family: Century Gothic, CenturyGothic, AppleGothic, sans-serif;
+    text-align:center;
+    padding: 10px;
+    font-size: 20px;
+}
+
+.lol{
+    text-align: center;
+}

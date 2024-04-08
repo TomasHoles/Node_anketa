@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="cs">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Webová anketa</title>
+</head>
+<body>
+    <h1>Anketa o strachu</h1>
+<form action="/submit" method="post" class="form-container" required>
+
+    <div>
+        <label for="jmeno">Jméno a příjmení:</label>
+        <input type="text" id="jmeno" name="jmeno"  required>
+    </div>
+    
+    <div>
+        <label for="strach">Napište sem svůj největší strach:</label>
+        <input type="text" id="strach" name="strach"  required>
+    </div>
+    
+    
+    <div>
+        <label for="intenzita">Jak hodně se bojíte tohoto strachu? (1 - 10): </label>
+        <input type="range" id="intenzita" name="intenzita" min="0" max="10" step="1"  required>
+        <span id="intenzitaValue"></span>
+    </div>
+    
+    <div>
+        <label for="tyden">Jak často se váš strach projevuje za týden:</label>
+        <input type="number" step="1" id="tyden" name="tyden" required>
+    </div>
+
+    <label for="naposled">Kdy naposledy jsi měl strach:</label>
+    <input type="date" id="naposled" name="naposled"  required>
+<br>
+<br>
+<div >
+<label>Rád se divám na horory:</label><br>
+
+    <input type="radio" id="Ano" name="horor" value="Ano">
+    <label for="Ano">Ano</label><br>
+    <input type="radio" id="Ne" name="horor" value="Ne">
+    <label for="Ne">Ne</label><br>
+    <input type="radio" id="Nevim" name="horor" value="Nevim">
+    <label for="Nevim">Nevim</label>
+    
+    
+</div>
+<br>
+    
+    <button type="submit">Odeslat odpovědi</button>
+</form>
+</body>
+<footer>
+    <p>&copy; 2024 Tomáš Holeš, třída IT2</p>
+    
+</footer>
+<script>
+    const slider = document.getElementById('intenzita');
+    const output = document.getElementById('intenzitaValue');
+    output.innerHTML = slider.value; 
+    
+    slider.oninput = function() {
+        output.innerHTML = this.value;
+    }
+    
+    document.addEventListener('DOMContentLoaded', function() {
+        const form = document.querySelector('.form-container');
+        
+        
+        submitButton.addEventListener('click', function(event) {
+            event.preventDefault(); // Zabraňuje výchozímu chování tlačítka pro odeslání
+            
+            // Najdi vybraný radio button
+            const selectedOption = document.querySelector('input[name="horor"]:checked');
+            
+           
+        });
+    });
+
+
+    </script>
+</html>
